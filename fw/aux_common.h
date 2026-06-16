@@ -103,6 +103,7 @@ struct UartEncoder {
       kCuiAmt21,
       kSerial,   // fdcanusb ASCII protocol for serial control
       kBoardDefault,
+      kMosracS,
 
       kNumModes,
     };
@@ -633,6 +634,7 @@ struct IsEnum<moteus::aux::UartEncoder::Config::Mode> {
         { M::kCuiAmt21, "cui_amt21" },
         { M::kSerial, "serial" },
         { M::kBoardDefault, "board_default" },
+        { M::kMosracS, "mosrac_s"},
       }};
   }
 };
