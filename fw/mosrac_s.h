@@ -79,9 +79,9 @@ class MosracS {
     }
 
     const uint32_t angle =
-        ((uint32_t)(buffer_[2]) << 16 |
-         (uint32_t)(buffer_[3]) << 8 |
-         (uint32_t)(buffer_[4])) >> 7;
+        (uint32_t)(buffer_[2]) << 16 |
+        (uint32_t)(buffer_[3]) << 8 |
+        (uint32_t)(buffer_[4]);
 
     status->value = angle;
     status->nonce++;
